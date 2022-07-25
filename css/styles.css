@@ -16,13 +16,16 @@
   --dark-bg-cl: #2f303a;
   --accent-bg-cl: #2196f3;
   --btn-bg-cl: #188ce8;
-  --border-head-cl: #ececec;
-  --border-card-cl: #eeeeee;
   --icon-bg-cl: #afb1b8;
   --dark-icon-bg-cl: rgba(255, 255, 255, 0.1);
   --dark-dec-bg-cl: rgba(47, 48, 58, 0.8);
   --modal-bg-cl: rgba(0, 0, 0, 0.2);
   --overlay-bg-cl: rgba(33, 150, 243, 0.9);
+
+  /* border colors */
+  --border-head-cl: #ececec;
+  --border-card-cl: #eeeeee;
+  --border-form-cl: rgba(255, 255, 255, 0.3);
 
   --timing-fuction: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -538,6 +541,9 @@ body {
 .foot:focus {
   color: var(--accent-txt-cl);
 }
+.switch-footer {
+  margin-right: 93px;
+}
 
 .switch-title {
   font-weight: 700;
@@ -571,6 +577,42 @@ body {
 .switch-link:focus {
   background-color: #2196f3;
 }
+
+.form-field input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 0;
+  color: var(--foot-txt-cl);
+
+  background-color: var(--dark-bg-cl);
+  border: 1px solid var(--border-form-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--white-txt-cl);
+
+  background-color: var(--accent-bg-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-icon {
+  fill: var(--white-bg-cl);
+  margin-left: 10px;
+}
+
 /* PORTFOLIO */
 
 .filters-list {
