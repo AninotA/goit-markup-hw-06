@@ -595,14 +595,22 @@
         </div>
         <p class="switch-title">Подпишитесь на рассылку</p>
         <form class="footer-form">
-          <div class="footer-field">            
-          <label class="footer-label" for="email" required lang="en">E-mail</label>
-          <input class="footer-input" type="email" name="email" id="email" autofocus />
+          <div class="footer-field">
+            <label class="footer-label" for="email" required>E-mail</label>
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              autofocus
+            />
 
-          <button type="submit" class="footer-btn btn list">Подписаться<svg class="btn-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-send"></use>
-          </svg></button>
-          
+            <button type="submit" class="footer-btn btn list">
+              Подписаться<svg class="btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
@@ -616,6 +624,27 @@
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="modal-form">
+          <div>
+            <label for="user-name">Имя</label>
+            <input type="name" name="name" id="user-name" placeholder="Антон Аношкин" />
+          </div>
+          <div>
+            <label for="user-tel">Телефон</label>
+            <input type="tel" name="tel" id="user-tel" placeholder="+300-000-00-00" />
+          </div>
+          <div>
+            <label for="user-email">Почта</label>
+            <input type="email" name="email" id="user-email" placeholder="your@mail.com" />
+          </div>
+          <div>
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="8"></textarea>
+          </div>
+
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
