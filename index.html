@@ -593,17 +593,17 @@
             </li>
           </ul>
         </div>
-        <p class="switch-title">Подпишитесь на рассылку</p>
+
         <form class="footer-form">
+          <p class="switch-title">Подпишитесь на рассылку</p>
           <div class="footer-field">
-            <label class="footer-label" for="email" required>E-mail</label>
+            <label class="footer-label" for="email" aria-autocomplete="none"></label>
             <input
               class="footer-input"
               type="email"
               name="email"
               id="email"
-              placeholder="E-mail"
-              autofocus
+              placeholder="E-mail"              
             />
 
             <button type="submit" class="footer-btn btn list">
@@ -624,22 +624,23 @@
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        
         <form action="modal-form">
-          <div>
-            <label for="user-name">Имя</label>
-            <input type="name" name="name" id="user-name" placeholder="Антон Аношкин" />
+          <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
+          <div class="modal-item">
+            <label class="modal-label" for="user-name">Имя</label>
+            <input class="modal-input" type="name" name="name" id="user-name" placeholder="Антон Аношкин" />
           </div>
-          <div>
-            <label for="user-tel">Телефон</label>
-            <input type="tel" name="tel" id="user-tel" placeholder="+300-000-00-00" />
+          <div class="modal-item">
+            <labe class="modal-label" for="user-tel">Телефон</labe>
+            <input class="modal-input" type="tel" name="tel" id="user-tel" placeholder="+300-000-00-00" />
           </div>
-          <div>
-            <label for="user-email">Почта</label>
-            <input type="email" name="email" id="user-email" placeholder="your@mail.com" />
+          <div class="modal-item">
+            <label class="modal-label" for="user-email">Почта</label>
+            <input class="modal-input" type="email" name="email" id="user-email" placeholder="your@mail.com" />
           </div>
-          <div>
-            <label for="comment">Комментарий</label>
+          <div class="modal-item">
+            <label class="modal-label" for="comment">Комментарий</label>
             <textarea name="comment" id="comment" rows="8"></textarea>
           </div>
 

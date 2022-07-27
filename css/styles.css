@@ -578,12 +578,27 @@ body {
   background-color: #2196f3;
 }
 
-.footer-field {
-display: flex;
-
+.footer-form {
+  width: 570px;
 }
 
+.footer-field {
+  display: flex;
+}
 
+.footer-input {
+  width: 358px;
+  padding: 13px 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--white-txt-cl);
+  background-color: transparent;
+  border: 1px solid var(--border-form-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
 
 .footer-btn {
   display: inline-flex;
@@ -784,4 +799,6 @@ display: flex;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
+/* Modal form */
 
