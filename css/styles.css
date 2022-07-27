@@ -764,11 +764,11 @@ body {
 }
 
 .modal {
-  position: relative;
-
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   left: 50%;
+
+  position: relative;
 
   width: 528px;
   height: 581px;
@@ -801,4 +801,3 @@ body {
 }
 
 /* Modal form */
-
