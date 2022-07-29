@@ -884,8 +884,34 @@ body {
 }
 
 .policy-label {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   margin-bottom: 30px;
+}
+
+.policy-text {
+  color: var(--descr-txt-cl);
+  user-select: none;
+  text-underline-position: under;
+}
+
+.policy-link {
+  color: var(--accent-txt-cl);
+}
+
+.policy-checkbox:checked + .policy-icon .policy-icon-uncheck {
+opacity: 0;
+transition: opacity 250ms var(--timing-fuction);
+}
+
+.policy-icon-check {
+  opacity: 0;
+  transition: opacity 250ms var(--timing-fuction);
+}
+.policy-checkbox:checked + .policy-icon .policy-icon-check {
+  opacity: 1;
 }
 
 .form-btn {
