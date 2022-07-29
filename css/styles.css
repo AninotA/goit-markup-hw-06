@@ -861,6 +861,8 @@ body {
   outline: transparent;
   border: 1px solid var(--border-form-cl);
   border-radius: 4px;
+
+  transition: border-color 250ms var(--timing-fuction);
 }
 
 .comment {
@@ -874,14 +876,33 @@ body {
   color: var(--placeholder-txt-cl);
 }
 
+.comment:focus-within,
+.comment:hover {
+  border-color: var(--accent-bg-cl);
+}
+
 .form-icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
 
   display: inline-block;
-  color: var(--main-txt-cl);
+  fill: var(--main-txt-cl);
+
+  transition: fill 250ms var(--timing-fuction);
 }
+
+.form-input:focus-within,
+.form-input:hover{
+  border-color: var(--accent-bg-cl);
+}
+
+.form-input:focus-within + .form-icon,
+.form-input:hover + .form-icon {
+  fill: var(--accent-txt-cl);
+}
+
+
 
 .policy-label {
   display: inline-flex;
@@ -943,21 +964,3 @@ transition: opacity 250ms var(--timing-fuction);
   background-color: var(--accent-bg-cl);
 }
 
-/* 
-
-
-
-
-
-
-
-
-
- {
-  width: 448px;
-  height: 120px;
-  padding: 15px 15px;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-} */
