@@ -544,7 +544,7 @@ body {
   color: var(--accent-txt-cl);
 }
 .switch-footer {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .switch-title {
@@ -578,10 +578,6 @@ body {
 .switch-link:hover,
 .switch-link:focus {
   background-color: #2196f3;
-}
-
-.footer-form {
-  width: 570px;
 }
 
 .footer-field {
@@ -780,8 +776,6 @@ body {
   top: 50%;
   left: 50%;
 
-  position: relative;
-
   width: 528px;
   height: 581px;
   padding: 40px;
@@ -810,7 +804,19 @@ body {
 
   background: var(--white-bg-cl);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  cursor: pointer;  
+  color: black;
+
+  transition: color 250ms var(--timing-fuction);}
+
+
+.modal-btn:hover,
+.modal-btn:focus {
+color: var(--accent-bg-cl);
+}
+
+.modal-btn-icon {
+  fill: currentColor;
 }
 
 .form-modal {
